@@ -1,0 +1,20 @@
+--find-links https://download.pytorch.org/whl/cu121
+torch==2.4.1+cu121
+
+--find-links https://data.pyg.org/whl/torch-2.4.0+cu121.html
+torch_geometric>=2.5.0
+pyg_lib
+torch_scatter
+torch_sparse
+torch_cluster
+torch_spline_conv
+
+# Other dependencies
+gensim
+node2vec
+
+# Install pathpyg from GitHub
+git+https://github.com/pathpy/pathpyg.git
+
+# Downgrade numpy
+numpy==1.26.4
